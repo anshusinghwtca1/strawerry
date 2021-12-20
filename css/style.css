@@ -1,0 +1,190 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: dosis;
+}
+.nav{
+	width: 80%;
+	margin: 30px auto;
+	display: flex;
+	align-items: center;
+}
+.logo img{
+	width: 125px;
+}
+ ul{
+ 	flex: 1;
+ 	text-align: right;
+}
+ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 25px;
+}
+ul li a{
+	text-decoration: none;
+	color: #000;
+	position: relative;
+	text-transform: capitalize;
+}
+ul li a::before{
+	content: '';
+	width: 0;
+	height: 10px;
+	background: #f14a60;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -50px;
+	transition: 0.5s;
+}
+ul li a:hover::before{
+	width: 100%;
+	
+}
+ul li a:hover{
+	color: #f14a60;	
+	animation: changecolor 0.5s infinite;
+}
+@keyframes changecolor{
+	0%{color: #f14a60;}
+	10%{color: #f14a62;}
+	20%{color: #red}
+	30%{color: #f14}
+	50%{color: red}
+	100%{color: darkred}
+}
+.menu-icons img{
+	height: 25px;
+	margin-left: 40px; 
+}
+.menu-icons{
+	margin-left: 40px;
+}
+.content{
+	width: 80%;
+	margin: auto;
+	height: 80vh;
+	margin-top: 4%;
+	display: flex;
+	align-items: center;
+}
+.left-content{
+	flex-basis: 50%;
+	height: 100%;
+	
+}
+.right-content{
+	height: 100%;
+	flex-basis: 50%;
+	display: flex;
+	align-items: center;
+}
+.right-content img{
+	height: 80%;
+}
+.search{
+	width: 45%;
+	margin-top: 50px;
+	border-bottom: 1px solid grey;
+}
+.search img{
+	margin-right: 10px;
+	width: 25px;
+	height: 25px;
+}
+.search input{
+	width: 85%;
+	font-size: 14px;
+	border: none;
+	outline: none;
+}
+.about{
+	width: 100%;
+	margin-top: 50px;
+}
+.about h1{
+	text-transform: capitalize;
+	font-size: 70px;
+	font-weight: 600;
+}
+.about h2{
+	margin-top: 10px;
+	font-size: 25px;
+	font-weight: 600;
+}
+.about p{
+	margin: 40px 0; 
+	color: grey;
+}
+button{
+	margin: 0px 0px 60px 0px;
+}
+.btn-one{
+	width: 125px;
+	font-size: 15px;
+	background: transparent;
+	padding: 6px 0;
+	border-radius: 15px;
+	border: 1px solid #f14a60;
+	color: #f14a60;
+	outline: none;
+	transition: 0.5s;
+}
+.btn-two{
+	margin-right: 10px;
+	width: 125px;
+	font-size: 15px;
+	background: #f14a60;
+	padding: 6px 0;
+	border-radius: 15px;
+	border: 1px solid #f14a60;
+	color: #fff;
+	outline: none;
+}
+.btn-one:hover{
+	background: #f14a60;
+	color: white;
+}
+hr{
+	width: 25%;
+}
+.social-icon{
+	margin-left: 150px;
+}
+.social-icon img{
+	height: 20px;
+	margin: 0px 15px;
+}
+.line::before{
+	content: '';
+	position: absolute;
+	width: 150px;
+	height: 2px;
+	background: grey;
+	z-index: 2;
+	top: 50%;
+	right: 0px;
+}
+.line{
+	position: relative;
+}
+@keyframes straw{
+	0%{color: #000;}
+	40%{color: #000;}
+	70%{color: #f14a60;}
+	100%{color: #f14a60;}
+	100%{color: #000;}
+	70%{color: #f14a60;}
+	40%{color: #f14a60;}
+}
+@keyframes berries{
+	0%{color: #f14a60}
+	40%{color: #f14a60;}
+	70%{color:#000;}
+	100%{color:#000}
+	100%{color: #f14a60;}
+	70%{color:#000;}
+	40%{color:#000;}
+}
